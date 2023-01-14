@@ -8,7 +8,7 @@ module "lambda" {
 
   source_path = "./src"
   handler     = "index.handler"
-  runtime     = "nodejs14.x"
+  runtime     = "nodejs16.x"
   publish     = true
 
   allowed_triggers = {
