@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-west-2"
-}
-
 module "lambda" {
   source        = "terraform-aws-modules/lambda/aws"
   function_name = "test-lambda"
@@ -35,6 +31,3 @@ module "api" {
   create_api_domain_name = false
 }
 
-output "url" {
-  value = module.api.default_apigatewayv2_stage_invoke_url
-}
