@@ -18,3 +18,6 @@ module "api" {
   create_api_domain_name = false
 }
 
+module "cognito" {
+  source = "./modules/cognito"
+}
